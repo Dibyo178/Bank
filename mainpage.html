@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapp er Bank</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-5xl text-center mt-6">Let's go to our <span class="font-semibold text-violet-600">Money</span></h1>
+    </header>
+
+     <section class="mt-12">
+
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="bg-red-400 p-8 rounded-xl">
+                <h4 class="text-3xl">Deposite</h4>
+                <h2  class="text-5xl">$<span id="deposite_value">00</span> </h2>
+            </div>
+            <div class="bg-green-500 p-8 rounded-xl">
+                <h4 class="text-3xl">Withdraw</h4>
+                <h2 class="text-5xl">$<span id="withdraw">00</span> </h2>
+            </div>
+            <div class="bg-emerald-400 p-8 rounded-xl">
+                <h4 class="text-3xl">Balance</h4>
+                <h2  class="text-5xl">$<span id="grand-total">1275</span> </h2>
+            </div>
+            
+        </div>
+     </section>
+
+     <!-- deposite and witdraw -->
+
+     <section class="mt-12">
+
+        <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-rose-600 p-8 rounded-xl">
+                <h4 class="text-3xl">Deposite</h4>
+                
+                
+                <input class="w-9/12 block mb-4 p-2" type="text" name="" id="deposite" placeholder="Enter an amount of Deposite">
+        
+
+          <button  type="submit" id="btn_deposite" class="bg-amber-600 hover:bg-violet-600 px-8 py-2 text-white font-medium">Submit</button>
+            </div>
+            
+       
+            
+            <div class="bg-violet-300 p-8 rounded-xl">
+                <h4 class="text-3xl">Withdraw</h4>
+               
+
+                <input class="w-9/12 block mb-4 p-2" type="text" name="" id="Withdraw_input" placeholder="Enter an amount of Withdraw">
+        
+
+          <button  type="submit" id="btn_withdraw" class="bg-red-600 hover:bg-violet-600 px-8 py-2 text-white font-medium">Withdraw</button>
+            </div>
+
+         </div>
+         
+     </section>
+
+
+    <script src="./js/finction.js"></script>
+     
+</body>
+
+
+</html>
